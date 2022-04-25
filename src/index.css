@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ProductTable{
+  width: 50%;
+  margin: 1rem auto 0;
+  border: 1px solid black;
+  padding: 16px;
+}
+
+.ProductTable > div.ProductTableHeading {
+  display: flex;
+  justify-content: space-around
+}
+
+
+.FilteredProductTable{
+  width: 75%;
+  margin: 0 auto 0;
+  padding: 16px;
+  border: 1px solid orange;
+}
+
+
+.Searchbar{
+  width: 50%;
+  margin: 0 auto 0;
+  border: 1px solid yellow;
+  padding: 16px;
+  overflow: auto
+}
+
+.Searchbar > div, .Searchbar> label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ProductCategoryRow > .catName{
+  color: red;
+  padding-top: 10px;
+  display: flex ;
+  justify-content: center
+  
+}
+
+.ProductRow {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around
+}
+
+
+
