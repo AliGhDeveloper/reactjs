@@ -38,3 +38,74 @@ div.navLinks> a.active{
   color: purple
 }
 
+div.MainPage > div.row{
+  display:flex
+}
+
+div.MPcol9{
+  background-color: yellow;
+  width: 65%
+}
+
+ div.MPcol3{
+  background-color: orange;
+  width: 35%
+}
+
+@media only screen and (max-width: 760px){
+  div.MainPage > div.row{
+    display: block;
+  }
+  div.MPcol9{
+    width: 100%
+  }
+  div.MPcol3{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+div.MPcol3 > div.addBar{
+  position: sticky;
+  top: 30px;
+}
+
+div.Add > div.card{
+  width : 75%;
+  margin: 0 auto 1rem;
+  
+}
+
+div.Add > div.card > div.card-header{
+  background-color: black;
+  border-radius: 5px 5px 0 0;
+}
+
+div.Add > div.card > div.card-body{
+  background-color: rgb(197, 197, 197);
+  padding: 16px;
+  border-radius: 0 0 5px 5px;
+}
+
+div.Add > div.card > div.card-header,
+div.Add > div.card > div.card-body{
+  text-align: center;
+}
+
+div.Add > div.card > div.card-body > p{
+  padding: 0;
+  margin: 0
+}
+
+div.Add > div.card > div.card-body > button {
+  width: 100%;
+  background-color:rgba(0, 208, 255, 0.625);
+  border-radius: 3px;
+}
+
+
+
+
+
+
