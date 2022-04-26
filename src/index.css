@@ -12,55 +12,29 @@ code {
     monospace;
 }
 
-.ProductTable{
-  width: 50%;
-  margin: 1rem auto 0;
-  border: 1px solid black;
-  padding: 16px;
-}
-
-.ProductTable > div.ProductTableHeading {
+.Navbar { 
+  background-color: rgba(0, 208, 255, 0.625);
+  padding: 10px;
   display: flex;
-  justify-content: space-around
+  justify-content: space-between;
 }
 
-
-.FilteredProductTable{
-  width: 75%;
-  margin: 0 auto 0;
-  padding: 16px;
-  border: 1px solid orange;
+.brand{
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-
-.Searchbar{
-  width: 50%;
-  margin: 0 auto 0;
-  border: 1px solid yellow;
-  padding: 16px;
-  overflow: auto
+.navLinks{
+  display: inline;
 }
 
-.Searchbar > div, .Searchbar> label{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navLinks > a {
+  margin-right: 1rem;
+  cursor: pointer;
 }
 
-
-.ProductCategoryRow > .catName{
-  color: red;
-  padding-top: 10px;
-  display: flex ;
-  justify-content: center
-  
+div.navLinks> a.active{
+  color: purple
 }
-
-.ProductRow {
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-around
-}
-
-
 
