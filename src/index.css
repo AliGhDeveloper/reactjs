@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:  ui-monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -43,12 +43,11 @@ div.MainPage > div.row{
 }
 
 div.MPcol9{
-  background-color: yellow;
+  background-color: #f1f1f1;
   width: 65%
 }
 
  div.MPcol3{
-  background-color: orange;
   width: 35%
 }
 
@@ -66,10 +65,12 @@ div.MPcol9{
   }
 }
 
-div.MPcol3 > div.addBar{
+div.addBar{
   position: sticky;
-  top: 30px;
+  top: 90px;
 }
+
+
 
 div.Add > div.card{
   width : 75%;
@@ -104,6 +105,34 @@ div.Add > div.card > div.card-body > button {
   border-radius: 3px;
 }
 
+
+div.Article{
+  background-color: #f8f9fa;
+  width: 80%;
+  margin: 10px auto 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px;
+}
+
+
+div.articleFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+div.articleFooter > span{
+  color: #777;
+  font-size: small;
+  display: flex;
+  align-items: center;
+}
+
+div.articleFooter > button{
+  background-color: rgba(71, 142, 218, 0.881);
+  border-radius: 2px;
+}
 
 
 
