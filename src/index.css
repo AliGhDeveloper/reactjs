@@ -66,6 +66,7 @@ div.MPcol9{
 }
 
 div.addBar{
+  padding: 10px;
   position: sticky;
   top: 90px;
 }
@@ -132,6 +133,17 @@ div.articleFooter > span{
 div.articleFooter > button{
   background-color: rgba(71, 142, 218, 0.881);
   border-radius: 2px;
+}
+
+.SiteFooter{
+  padding: 20px;
+  display:flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+}
+
+div.SiteFooter ul {
+  list-style: none;
 }
 
 
