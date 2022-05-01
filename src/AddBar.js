@@ -24,7 +24,6 @@ function AddBar(){
             <Add />
             <Add />
             <Add />
-
         </div>
     )
 }

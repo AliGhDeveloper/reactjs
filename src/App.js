@@ -1,13 +1,14 @@
-import Navbar from './Navbar'
-import MainPage from './MainPage'
-import SiteFooter from './SiteFooter'
+import { Routes, Route} from 'react-router-dom'
+import HomePage from './HomePage'
+import ArticlePage from './ArticlePage'
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <MainPage />
-      <SiteFooter />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/articles/:title" element={<ArticlePage />} />
+      </Routes>
     </div>
   );
 }

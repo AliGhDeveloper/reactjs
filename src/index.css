@@ -38,24 +38,26 @@ div.navLinks> a.active{
   color: purple
 }
 
-div.MainPage > div.row{
+div.row{
   display:flex
 }
 
 div.MPcol9{
+  padding-top: 20px;
   background-color: #f1f1f1;
   width: 65%
 }
 
- div.MPcol3{
+div.MPcol3{
   width: 35%
 }
 
 @media only screen and (max-width: 760px){
-  div.MainPage > div.row{
+  div.row{
     display: block;
   }
   div.MPcol9{
+    padding-top: 20px;
     width: 100%
   }
   div.MPcol3{
@@ -110,7 +112,7 @@ div.Add > div.card > div.card-body > button {
 div.Article{
   background-color: #f8f9fa;
   width: 80%;
-  margin: 10px auto 0;
+  margin: 0 auto 30px;
   padding: 10px;
   border: 1px solid black;
   border-radius: 3px;
@@ -147,6 +149,29 @@ div.SiteFooter ul {
 }
 
 
+.SingleArticle{
+  padding:20px;
+  width:85%;
+  margin: 10px auto 0;
+  border: 1px solid black;
+  background-color: #f8f9fa
+}
+
+.SingleArticle > div.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.SingleArticle > div.header > span{
+  display: flex;
+  align-items: center;
+  color:#777
+}
+
+.SingleArticle > span.footer{
+  color: #777;
+  font-size: 13px;
+}
 
 
 

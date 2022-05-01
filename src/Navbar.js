@@ -1,18 +1,24 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 class Navbar extends React.Component{
     constructor(props){
         super(props);
-        this.state = {searchText : ''};
+        this.changeHandle = this.changeHandle.bind(this);
     }
+
+    changeHandle(event){
+        this.props.searchBarHandle(event.target.value)
+    }
+
 
     render(){
         return(
             <div className="Navbar">
                 <div className="links">
-                    <a className="brand" >SPa</a>
+                    <Link to="/" className="brand" >SPa</Link>
                     <div className="navLinks">
-                        <a className="active">Home</a>
+                        <Link to="/" className="active">Home</Link>
                         <a >About</a>
                     </div>
                 </div>
@@ -20,7 +26,7 @@ class Navbar extends React.Component{
                     <label>
                         Search:
                     </label>
-                    <input type="text" name="search" placeholder="search.." />
+                    <input type="text" style={{marginLeft: '5px'}} name="search" onChange={this.changeHandle}  placeholder="search.." />
                 </div>
             </div>
         )

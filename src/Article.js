@@ -1,12 +1,15 @@
-function Article(){
+import {Link} from 'react-router-dom';
+
+
+function Article(props){
     return(
         <div className="Article" >
-            <h3>Article 1</h3>
+            <h3>{props.article.title}</h3>
             <hr />
-            <p>description: ...</p>
+            <p>{props.article.description}</p>
             <div className="articleFooter">
-                <span>4/28/2022</span>
-                <button>More...</button>
+                <span>{props.article.date}</span>
+                <button><Link to={props.article.url}>More...</Link></button>
             </div>
         </div>
     )
